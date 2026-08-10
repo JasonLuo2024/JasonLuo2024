@@ -38,30 +38,30 @@
 ## Toolkit
 
 <p>
-  <img src="https://img.shields.io/badge/AWS-000000?style=flat-square&logo=amazonwebservices&logoColor=white">
-  <img src="https://img.shields.io/badge/Terraform-000000?style=flat-square&logo=terraform&logoColor=white">
-  <img src="https://img.shields.io/badge/Docker-000000?style=flat-square&logo=docker&logoColor=white">
-  <img src="https://img.shields.io/badge/Lambda-000000?style=flat-square&logo=awslambda&logoColor=white">
-  <img src="https://img.shields.io/badge/ECS%20Fargate-000000?style=flat-square&logo=amazonecs&logoColor=white">
+  <img src="https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white">
+  <img src="https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white">
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white">
+  <img src="https://img.shields.io/badge/Lambda-FF9900?style=flat-square&logo=awslambda&logoColor=white">
+  <img src="https://img.shields.io/badge/ECS%20Fargate-FF9900?style=flat-square&logo=amazonecs&logoColor=white">
 </p>
 <p>
-  <img src="https://img.shields.io/badge/Lake%20Formation-000000?style=flat-square&logo=amazonaws&logoColor=white">
-  <img src="https://img.shields.io/badge/Glue-000000?style=flat-square&logo=amazonaws&logoColor=white">
-  <img src="https://img.shields.io/badge/Athena-000000?style=flat-square&logo=amazonaws&logoColor=white">
-  <img src="https://img.shields.io/badge/Spark-000000?style=flat-square&logo=apachespark&logoColor=white">
-  <img src="https://img.shields.io/badge/DynamoDB-000000?style=flat-square&logo=amazondynamodb&logoColor=white">
+  <img src="https://img.shields.io/badge/Lake%20Formation-4053D6?style=flat-square&logo=amazonaws&logoColor=white">
+  <img src="https://img.shields.io/badge/Glue-8C4FFF?style=flat-square&logo=amazonaws&logoColor=white">
+  <img src="https://img.shields.io/badge/Athena-232F3E?style=flat-square&logo=amazonaws&logoColor=white">
+  <img src="https://img.shields.io/badge/Spark-E25A1C?style=flat-square&logo=apachespark&logoColor=white">
+  <img src="https://img.shields.io/badge/DynamoDB-4053D6?style=flat-square&logo=amazondynamodb&logoColor=white">
 </p>
 <p>
-  <img src="https://img.shields.io/badge/PyTorch-000000?style=flat-square&logo=pytorch&logoColor=white">
-  <img src="https://img.shields.io/badge/MLflow-000000?style=flat-square&logo=mlflow&logoColor=white">
-  <img src="https://img.shields.io/badge/CUDA-000000?style=flat-square&logo=nvidia&logoColor=white">
+  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white">
+  <img src="https://img.shields.io/badge/MLflow-0194E2?style=flat-square&logo=mlflow&logoColor=white">
+  <img src="https://img.shields.io/badge/CUDA-76B900?style=flat-square&logo=nvidia&logoColor=white">
 </p>
 <p>
-  <img src="https://img.shields.io/badge/Python-000000?style=flat-square&logo=python&logoColor=white">
-  <img src="https://img.shields.io/badge/TypeScript-000000?style=flat-square&logo=typescript&logoColor=white">
-  <img src="https://img.shields.io/badge/Java-000000?style=flat-square&logo=openjdk&logoColor=white">
-  <img src="https://img.shields.io/badge/FastAPI-000000?style=flat-square&logo=fastapi&logoColor=white">
-  <img src="https://img.shields.io/badge/Nuxt.js-000000?style=flat-square&logo=nuxtdotjs&logoColor=white">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white">
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white">
+  <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white">
+  <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white">
+  <img src="https://img.shields.io/badge/Nuxt.js-00DC82?style=flat-square&logo=nuxtdotjs&logoColor=white">
 </p>
 
 <br>
@@ -69,12 +69,19 @@
 ## GitHub
 
 <p>
-  <img src="https://img.shields.io/github/followers/JasonLuo2024?style=flat-square&logo=github&label=Followers&labelColor=000000&color=000000" alt="Followers">
-  <img src="https://img.shields.io/github/stars/JasonLuo2024?style=flat-square&logo=github&label=Stars&labelColor=000000&color=000000" alt="Stars">
-  <img src="https://komarev.com/ghpvc/?username=JasonLuo2024&style=flat-square&label=Profile+Views&color=000000" alt="Profile views">
+  <img src="https://img.shields.io/github/followers/JasonLuo2024?style=flat-square&logo=github&label=Followers&labelColor=181717&color=555555" alt="Followers">
+  <img src="https://img.shields.io/github/stars/JasonLuo2024?style=flat-square&logo=github&label=Stars&labelColor=181717&color=555555" alt="Stars">
+  <img src="https://komarev.com/ghpvc/?username=JasonLuo2024&style=flat-square&logo=github&label=Profile+Views&color=181717" alt="Profile views">
 </p>
 
-<p>
-  <img src="https://github-readme-stats.vercel.app/api?username=JasonLuo2024&show_icons=true&hide_border=true&title_color=000000&text_color=444444&icon_color=000000&bg_color=00000000" alt="GitHub stats" height="150">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=JasonLuo2024&layout=compact&hide_border=true&title_color=000000&text_color=444444&bg_color=00000000" alt="Top languages" height="150">
-</p>
+**Contributions by year** &nbsp;<sub>all repos, including private</sub>
+
+<!-- CONTRIB:START -->
+| Year | | Total |
+|:--|:--|--:|
+| **2026** | `██████████████████` | 1,279 <sub>· YTD</sub> |
+| **2025** | `████████████████████` | 1,409 |
+| **2024** | `████████████████` | 1,097 |
+| **2023** | `█` | 88 |
+| **2022** | `▏` | 28 |
+<!-- CONTRIB:END -->

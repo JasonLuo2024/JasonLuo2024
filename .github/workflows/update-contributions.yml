@@ -1,0 +1,86 @@
+name: Update contributions table
+
+on:
+  schedule:
+    - cron: "0 6 * * *"   # daily at 06:00 UTC
+  workflow_dispatch:        # allow manual runs
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Regenerate contributions table
+        uses: actions/github-script@v7
+        with:
+          # PAT with read:user scope so PRIVATE contributions are counted.
+          # Falls back to GITHUB_TOKEN (public-only) if the secret is absent.
+          github-token: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
+          script: |
+            const fs = require('fs');
+
+            // Who am I, and when did the account start?
+            const me = await github.graphql(`{ viewer { login createdAt } }`);
+            const login = me.viewer.login;
+            const startYear = new Date(me.viewer.createdAt).getUTCFullYear();
+            const thisYear = new Date().getUTCFullYear();
+
+            // Fetch total contributions per calendar year.
+            const rows = [];
+            for (let y = startYear; y <= thisYear; y++) {
+              const from = `${y}-01-01T00:00:00Z`;
+              const to   = `${y}-12-31T23:59:59Z`;
+              const data = await github.graphql(
+                `query($from:DateTime!,$to:DateTime!){
+                   viewer { contributionsCollection(from:$from,to:$to){
+                     contributionCalendar { totalContributions } } } }`,
+                { from, to }
+              );
+              const total = data.viewer.contributionsCollection.contributionCalendar.totalContributions;
+              rows.push({ year: y, total });
+            }
+
+            // Drop leading years with zero activity.
+            while (rows.length && rows[0].total === 0) rows.shift();
+
+            const max = Math.max(1, ...rows.map(r => r.total));
+            const WIDTH = 20;
+            const bar = v => v === 0 ? '▏' : '█'.repeat(Math.max(1, Math.round((v / max) * WIDTH)));
+
+            // Build the table, newest year first.
+            let table = '| Year | | Total |\n|:--|:--|--:|\n';
+            for (const r of [...rows].reverse()) {
+              const ytd = r.year === thisYear ? ' <sub>· YTD</sub>' : '';
+              table += `| **${r.year}** | \`${bar(r.total)}\` | ${r.total.toLocaleString('en-US')}${ytd} |\n`;
+            }
+
+            // Splice it between the markers.
+            const path = 'README.md';
+            const readme = fs.readFileSync(path, 'utf8');
+            const updated = readme.replace(
+              /<!-- CONTRIB:START -->[\s\S]*?<!-- CONTRIB:END -->/,
+              `<!-- CONTRIB:START -->\n${table}<!-- CONTRIB:END -->`
+            );
+
+            if (updated !== readme) {
+              fs.writeFileSync(path, updated);
+              core.setOutput('changed', 'true');
+            } else {
+              core.setOutput('changed', 'false');
+            }
+
+      - name: Commit if changed
+        run: |
+          if [[ -n "$(git status --porcelain README.md)" ]]; then
+            git config user.name  "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add README.md
+            git commit -m "chore: refresh contributions table"
+            git push
+          else
+            echo "No changes."
+          fi
