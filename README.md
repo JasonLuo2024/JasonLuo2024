@@ -62,6 +62,12 @@ AWS-certified software engineer with 3+ years building secure, scalable cloud-na
 ## 📊 GitHub
 
 <p align="center">
+  <img src="https://img.shields.io/github/followers/JasonLuo2024?style=for-the-badge&logo=github&label=Followers&labelColor=111111&color=555555" alt="Followers">
+  <img src="https://img.shields.io/github/stars/JasonLuo2024?style=for-the-badge&logo=github&label=Stars&labelColor=111111&color=555555" alt="Stars">
+  <img src="https://komarev.com/ghpvc/?username=JasonLuo2024&style=for-the-badge&label=Profile+Views&color=111111" alt="Profile views">
+</p>
+
+<p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=JasonLuo2024&show_icons=true&hide_border=true&theme=transparent" alt="GitHub stats" height="150">
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=JasonLuo2024&layout=compact&hide_border=true&theme=transparent" alt="Top languages" height="150">
 </p>
