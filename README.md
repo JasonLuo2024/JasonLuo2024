@@ -10,7 +10,7 @@ AWS-certified software engineer with 3+ years building secure, scalable cloud-na
 
 ### 🚀 Projects
 
-- **AWS Cloud Lakehouse & Distributed Data Processing Platform** — Cloud-native lakehouse with Lake Formation-governed access and Glue Data Catalog federation across raw, processed, and curated S3 layers; distributed Spark workflows provisioned with Terraform.
+- **[AWS Cloud Lakehouse & Distributed Data Processing Platform](https://github.com/JasonLuo2024/aws-lakehouse-spark-platform)** — Cloud-native lakehouse with Lake Formation-governed access and Glue Data Catalog federation across raw, processed, and curated S3 layers; distributed Spark workflows provisioned with Terraform.
 - **MESO** — In-house energy modelling & optimization platform for renewable and hybrid energy projects. *Winner, Econext Cleantech Innovation Award (2026).*
 - **[NL Roadtest Monitor](https://github.com/JasonLuo2024/NLRoadTestMonitor)** — Tool that monitors Newfoundland & Labrador road-test availability and surfaces open booking slots.
 - **[Breast Cancer Detection](https://github.com/JasonLuo2024/breast-cancer-detection)** — Multi-view breast cancer detection on VinDr-Mammo: CrossView Transformer, BreastPairNet, and MC Dropout triage (AUC 0.846).
